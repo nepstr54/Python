@@ -19,3 +19,24 @@ def power(num, pow_num):
 number = int(input('Введите число A: '))
 power_number = int(input('Введите число B: '))
 print(power(number, power_number))
+
+
+
+
+
+# Задача 28: Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел.
+#  Из всех арифметических операций допускаются только +1 и -1. Также нельзя использовать циклы.
+def sum (number1: int, number2: int) -> int:
+    if number2 == 0:
+        return number1
+    return 1 + sum(number1, number2-1)
+numbers1 = int(input('Введите первое число: '))
+numbers2 = int(input('Введите второе число число: '))
+print(sum(numbers1, numbers2))
+def sum (number1: int, number2: int) -> int:
+    if number2 == 0:
+        return number1
+    return 1 + sum(number1, number2-1)
+numbers1 = int(input('Введите первое число: '))
+numbers2 = int(input('Введите второе число число: '))
+print(sum(numbers1, numbers2))
